@@ -6,5 +6,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('List all') {
+            steps {
+                ls -a
+            }
+        }
     }
 }
